@@ -32,7 +32,7 @@ while True:
 
     now = datetime.now()
     timestamp = f"({now.hour:02d}:{now.minute:02d}:{now.second:02d}) "
-
-    # imprime linha por linha pra não bagunçar quando vier várias de uma vez
+    
+    # prints line by line to avoid confusion
     for line in msg.splitlines(True):
         print(timestamp + line, end="")
